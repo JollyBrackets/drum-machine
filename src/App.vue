@@ -64,7 +64,7 @@ export default {
       this.tracks.forEach(({ steps, player }) => {
         if (steps[this.position]) player.start(time)
       })
-      this.position = (this.position + 1) % 15
+      this.position = (this.position + 1) % 16
     }, '16n');
 
     Tone.Transport.bpm.value = 80
